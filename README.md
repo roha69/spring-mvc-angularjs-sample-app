@@ -21,11 +21,13 @@ After cloning the repository, the following command installs the Javascript depe
 
 To build the backend and start the server, run the following command on the root folder of the repository:
 
-With hsqlDB Database (IN MEMORY)
+With hsqlDB Database (IN MEMORY) :
+
     mvn clean install tomcat7:run-war -Dspring.profiles.active=test
  
- With Postgres Database 
-     mvn clean install tomcat7:run-war -Dspring.profiles.active=develop
+ With Postgres Database :
+ 
+    mvn clean install tomcat7:run-war -Dspring.profiles.active=develop
 
 The spring test profile will activate an in-memory database. After the server starts, the application is accessible at the following URL:
 
